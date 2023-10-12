@@ -1,0 +1,13 @@
+// Tailwind
+@import "~tailwindcss/base";
+@import "./custom/base";
+
+@import "~tailwindcss/components";
+@import "./custom/components";
+
+@import "~tailwindcss/utilities";
+@import "./custom/utilities";
+
+
+// Custom
+@import "./custom/sections";

@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class DefectResource extends JsonResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @param \Illuminate\Http\Request $request request
+     *
+     * @return array
+     */
+    public function toArray($request)
+    {
+        return [
+            'id'            => $this->id,
+            'title'         => $this->title,
+            'required_time' => $this->required_time,
+            'price'         => (int) $this->price,
+            'cost'          => (int) $this->cost,
+            'device'        => new DeviceAlongDefectResource($this->device),
+            'created_at'    => $this->created_at->diffForHumans(),
+        ];
+    }
+}

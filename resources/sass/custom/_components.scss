@@ -1,0 +1,244 @@
+.table-footer-bg {
+    @apply bg-white;
+}
+.layout-bg {
+    @apply bg-gray-100;
+}
+
+.max-height-wrap {
+    maxheight: '200px';
+}
+
+.content-title {
+    @apply text-2xl px-1 font-semibold text-gray-600 uppercase;
+}
+.content-title-icon {
+    @apply flex-shrink-0 pt-1 h-7 w-7 text-gray-600;
+}
+
+.content-card-body {
+    @apply bg-white shadow overflow-hidden rounded-lg;
+}
+
+.sidebar-icon-text-color {
+    @apply text-blue-400;
+}
+.sidebar-bg {
+    background: #00172c;
+}
+
+.card-footer {
+    @apply bg-white text-right px-4 py-3;
+    &:sm {
+        @apply px-6;
+    }
+}
+
+.block-link-icon {
+    @apply w-20 h-20 p-3 text-black text-gray-500;
+}
+
+.form-description-text {
+    @apply mt-1 text-xs leading-5 text-gray-500;
+}
+
+.form-description-head {
+    @apply text-lg font-medium leading-6 capitalize text-gray-600;
+}
+
+.form-input {
+    @apply w-full px-4 py-2 rounded-md border border-gray-300;
+}
+
+.form-label {
+    @apply block text-sm font-medium leading-5 text-gray-700;
+}
+
+.router-link {
+    @apply flex items-center px-4 py-3 transition ease-in-out duration-150 font-medium;
+
+    &:focus {
+        @apply outline-none bg-gray-600;
+    }
+
+    &.router-link-desktop {
+        @apply text-sm leading-5;
+    }
+
+    &.router-link-mobile {
+        @apply text-base leading-6;
+    }
+
+    &.router-link-active,
+    &.router-link-exact-active {
+        @apply text-white bg-gray-800;
+    }
+
+    &:not(.router-link-active),
+    &:not(.router-link-exact-active) {
+        @apply text-white;
+
+        &:hover {
+            @apply text-white bg-gray-800;
+        }
+
+        &:focus {
+            @apply text-white bg-gray-800;
+        }
+    }
+}
+
+.btn {
+    @apply px-4 py-2 rounded-md border border-transparent leading-5 font-medium shadow;
+
+    &:focus {
+        @apply outline-none;
+    }
+    &:disabled {
+        @apply opacity-50 cursor-not-allowed;
+    }
+
+    &.btn-white {
+        @apply border-gray-300 bg-white text-gray-700;
+
+        &:not(:disabled) {
+            &:hover {
+                @apply text-gray-500;
+            }
+
+            &:focus {
+                @apply border-blue-300;
+            }
+        }
+    }
+
+    &.btn-blue {
+        @apply bg-blue-500 text-white;
+
+        &:not(:disabled) {
+            &:hover {
+                @apply bg-blue-400;
+            }
+
+            &:active {
+                @apply bg-blue-600;
+            }
+
+            &:focus {
+                @apply border-blue-600;
+            }
+        }
+    }
+
+    &.btn-green {
+        @apply bg-green-500 text-white;
+
+        &:not(:disabled) {
+            &:hover {
+                @apply bg-green-400;
+            }
+
+            &:active {
+                @apply bg-green-600;
+            }
+
+            &:focus {
+                @apply border-green-600;
+            }
+        }
+    }
+
+    &.btn-yellow {
+        @apply bg-yellow-400 text-white;
+
+        &:not(:disabled) {
+            &:hover {
+                @apply bg-yellow-300;
+            }
+
+            &:active {
+                @apply bg-yellow-500;
+            }
+
+            &:focus {
+                @apply border-yellow-500;
+            }
+        }
+    }
+
+    &.btn-purple {
+        @apply bg-purple-500 text-white;
+
+        &:not(:disabled) {
+            &:hover {
+                @apply bg-purple-400;
+            }
+
+            &:active {
+                @apply bg-purple-600;
+            }
+
+            &:focus {
+                @apply border-purple-600;
+            }
+        }
+    }
+
+    &.btn-red {
+        @apply bg-red-500 text-white;
+
+        &:not(:disabled) {
+            &:hover {
+                @apply bg-red-400;
+            }
+
+            &:active {
+                @apply bg-red-600;
+            }
+
+            &:focus {
+                @apply border-red-600;
+            }
+        }
+    }
+
+    &.btn-secondary {
+        @apply bg-gray-500 text-white;
+
+        &:not(:disabled) {
+            &:hover {
+                @apply bg-gray-400;
+            }
+
+            &:active {
+                @apply bg-gray-600;
+            }
+
+            &:focus {
+                @apply border-gray-600;
+            }
+        }
+    }
+}
+
+.pagination-link {
+    @apply relative rounded-md inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium text-gray-700 bg-white transition duration-150 ease-in-out;
+
+    &:not(:disabled) {
+        &:hover {
+            @apply text-gray-500;
+        }
+
+        &:focus {
+            @apply outline-none border-blue-300;
+        }
+
+        &:active {
+            @apply bg-gray-100 text-gray-700;
+        }
+    }
+}
+
+.velmld-overlay {
+    z-index: 35 !important;
+}

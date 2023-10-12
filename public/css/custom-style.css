@@ -1,0 +1,25 @@
+@media print {
+  .hide-in-print-screen {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a8a6a8;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #878587;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}
